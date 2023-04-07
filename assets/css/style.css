@@ -1,0 +1,162 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+:root {
+    --primary: black ;
+    --secondary: white ;
+    --background1: rgb(77, 61, 102) ;
+    --background2: rgb(82, 45, 45) ;
+    --background3: rgb(247, 255, 214) ;
+    --headerBG1: rgb(147, 228, 248) ;
+    --headerBG2: rgb(175, 118, 248);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  background-image:  linear-gradient(to bottom right, var(--background1) , var(--background2));
+  background-size: 100% 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: linear-gradient(to right, var(--headerBG1) , var(--headerBG2));
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px 10px;
+  color: var(--secondary);
+  margin: 20px;
+  background-color: var(--background2);
+}
+
+img {
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+  width: 25%;
+}
+
+.page-wrapper {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 20px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content:left;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: center;
+  padding-right: 15px;
+  border-right: 4px dotted var(--secondary);
+  font-size: 50px;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+
+.flex-item {
+  border: 10px dashed var(--primary);
+  background-color: var(--background3);
+  color: var(--secondary);
+  min-height: 200px;
+  min-width: 0px;
+  max-width: 1000px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 0px 0;
+  margin: 10px;
+  background-size: 150%;
+}
+
+.flex-item div {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 8px 5px;
+}
+
+.flex-item h3 {
+  font-size: 20px;
+}
+
+.flex-item span {
+  font-size: 10px;
+}
+
+.Trail-Planner {
+  background-image: url("../images/TP.png");
+  background-size: 100% 100%;
+}
+
+.Baby-Journal {
+  background-image: url("../images/BabyJ.png");
+  background-size: 100% 100%;
+}
+
+.VGT {
+  background-image: url("../images/vgt.png");
+  background-size: 100% 100%;
+}
+
+.page-contact {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center ;
+}
+
+.contact address {
+  height: 100%;
+}
+
+.page-contact > h2 {
+  flex: 0 0 ;
+  text-align: center;
+  padding-right: 15px;
+  border-right: 4px dotted var(--secondary);
+  font-size: 50px;
+}
+
+.contact address a {
+  color: var(--secondary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  background-image: linear-gradient(var(--background3) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+@media screen and (max-width: 980px) {
+}
